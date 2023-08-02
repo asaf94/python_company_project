@@ -35,7 +35,7 @@ class Tractor:
         # Start the tractor and simulate its operation while decrementing fuel status
         if self.status == "Off":
             print(f"Tractor {self.tractor_id} cannot run. Turn it on first.")
-            return
+            return None
         
         self.status = "Working"
         while self.fuel_status > 0:

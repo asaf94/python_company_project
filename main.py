@@ -19,7 +19,7 @@ class Main:
         num_tractors = int(input("Enter the number of dedicated tractors (should be more than 3): "))
         if num_tractors < 3:
             print("Number of tractors should be more than 3.")
-            return
+            return None
 
         # Create tractor instances and assign them to the farm
         for _ in range(num_tractors):
